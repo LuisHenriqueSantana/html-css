@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+
+        <img src="imagens/paisagem-g.png" alt="Imagem-Grande">
+
+    </picture>
+
+<h1>Reproduzindo Áudio</h1>
+<p>vamos aprender a reproduzir audio no HTML5</p>
+
+<audio src="midia/church bell.mp3" controls autoplay loop></audio> <!-- compátivel com - mp3 wav ogg-->
+
+<audio preload="auto" autoplay>
+    <source src="midia/church bell.mp3" type="audio/mpeg">
+
+    <source src="midia/church bell.wav" type="audio/wav">
+
+    <source src="midia/church bell.ogg" type="audio/ogg">
+    <p>infelizmente seu navegador não suporta áudio <a href="midia/church bell.mp3">clique aqui para baixar</a></p>
+</audio>
+
+</body>
+</html>

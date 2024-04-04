@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: gray;           
+        }
+
+        header {
+            border: inset orangered 2px;
+            text-align: center;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.288);
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        nav  {
+            margin: auto;
+            width: 400px;
+            border-radius: 5px;
+            padding: 4px;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.288);
+            background-color: wheat;
+        }
+
+        #assuntos {
+            background-color: orange;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.288);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px 5px;
+            text-align: justify;
+            font-weight: bold;
+        }
+
+        nav> a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav> a:hover {
+            color: rgb(187, 255, 0);
+            text-decoration: underline;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main  {
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.288);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: black;
+            background-color: orangered;
+        }
+
+        footer {
+            border-radius: 5px;
+            padding: 4px;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        .T {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+<main>
+    <section id="assuntos">
+        <article>
+            <h1 class="T">Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam, pariatur ab nobis nam minima, mollitia, eligendi voluptatibus quae libero neque quia iusto modi eaque vel maxime ex molestias repellat?</p>
+            <aside>
+                <p>Escrito por Luis Henrique</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </section>
+</main>
+<footer>
+        <p>Luis Henrique</p>
+</footer>
+
+</body>
+</html>
